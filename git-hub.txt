@@ -1,0 +1,66 @@
+//Clone a respository
+
+To clone a repository from GitHub using the command line interface (CLI), follow these steps:
+
+Open a terminal window or command prompt on your computer.
+
+Navigate to the directory where you want to clone the repository. You can use the cd command to change directories. For example, cd ~/Documents would take you to the Documents folder.
+
+On the GitHub repository page, click on the "Code" button and select the HTTPS or SSH option depending on how you want to access the repository.
+
+Copy the URL that is displayed in the box.
+
+In your terminal or command prompt, type the following command and paste the URL you copied in the previous step after the word git clone:
+
+bash
+Copy code
+git clone <repository URL>
+Press enter and wait for the repository to be cloned to your computer. You should see a message that says "Cloning into <repository name>" followed by the progress of the download.
+
+Once the download is complete, you should see a new directory with the name of the repository in the directory where you cloned it.
+
+That's it! You have now cloned a repository from GitHub using the command line interface
+
+//Commit Changes
+
+To commit changes to a repository using the command line interface (CLI), follow these steps:
+
+Navigate to the directory where the repository is located using the cd command.
+
+Type the following command to check the current status of the repository:
+
+
+Copy code
+git status
+This will show you the changes that have been made to the repository.
+
+Add the changes you want to commit to the staging area using the following command:
+
+
+Copy code
+git add <file name>
+Alternatively, you can use the following command to add all changes to the staging area:
+
+
+Copy code
+git add .
+Once the changes are added to the staging area, you can commit the changes using the following command:
+
+
+Copy code
+git commit -m "commit message"
+Replace commit message with a brief description of the changes you made.
+
+Finally, push the changes to the remote repository using the following command:
+
+
+Copy code
+git push
+If you are pushing to a branch other than the main branch, you will need to specify the branch name in the command:
+
+
+Copy code
+git push <remote> <branch>
+Replace <remote> with the name of the remote repository (e.g. "origin") and <branch> with the name of the branch you want to push to.
+
+That's it! You have now committed changes to a repository using the command line interface.
